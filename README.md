@@ -4,9 +4,13 @@
 
 Containers isolate the application from the environment in which it runs, ensuring that it functions consistently across any platform.
 
+---
+
 #### Definition of Docker
 
 Docker is a containerization platform that automates the creation, deployment, and execution of applications in containers.
+
+---
 
 #### Advantages of Docker
 
@@ -14,9 +18,13 @@ Docker is a containerization platform that automates the creation, deployment, a
 - Ease of distribution and scalability.
 - Isolation of applications and their dependencies.
 
+---
+
 #### Docker compose
 
 A tool for defining and running multi-container applications. It facilitates the management of containers that depend on one another.
+
+---
 
 #### Best practises
 
@@ -24,6 +32,8 @@ A tool for defining and running multi-container applications. It facilitates the
 - Split the image build process into multiple stages.
 - Use volumes for data persistence.
 - Avoid hardcoding credentials.
+
+---
 
 #### Dockerfile example
 
@@ -38,6 +48,8 @@ COPY . .
 
 CMD ["pnpm", "start"]
 ```
+
+---
 
 #### Docker compose example
 
@@ -58,6 +70,8 @@ services:
       timeout: 5s
       retries: 5
 ```
+
+---
 
 #### Useful commands
 
